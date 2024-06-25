@@ -15,10 +15,10 @@
     <header>
         <h1>Welcome to My Protfolio</h1>
             <div class="container">
-                <a href=""><button class="button">About</button></a>
-                <a href=""><button class="button">Skills</button></a>
-                <a href=""><button class="button">Project</button></a>
-                <a href=""><button class="button">Contact</button></a>
+                <a href="#about"><button class="button">About</button></a>
+                <a href="#skills"><button class="button">Skills</button></a>
+                <a href="#projects"><button class="button">Project</button></a>
+                <a href="#contact"><button class="button">Contact</button></a>
             </div>
     </header>
 
@@ -68,41 +68,45 @@
             <h1>Contact me</h1>
             <p>Feel free to get in touch with me using the form below:</p>
             <form action="">
-            <label for="name" >Name:</label>
-            <input type="text" id="name" placeholder=" Enter you name" size="20px" required>
-            <br>
+                <div>
+                    
+                    <label for="name" >Name:</label>
+                    <input type="text" id="name" placeholder=" Enter you name" size="20px" required>
+                </div>
+                <div>
+                    <label for="email" >Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" size="20px">
 
-            <label for="email" >Email:</label>
-            <input type="email" id="email" placeholder="Enter your email" size="20px">
+                </div>
+                <div>
+                    <b>Choose your gender:</b>
+                    <input type="radio" id="male">
+                    <label for="male">Male</label>
 
-            <br>
-
-            <b>Choose your gender:</b>
-            <input type="radio" id="male">
-            <label for="male">Male</label>
-            <input  type="radio"  id="female"> 
-            <label for="female">Female</label>
-            <br>
-
-            <b>Select your intrests:</b>
-            <input type="checkbox" id="coding">
-            <label for="coding">Coding</label>
-            <input type="checkbox" id="'reading">
-            <label for="reading" >Reading</label>
-            <br>
-
-            <label>Bio(upto 200 characteristics):</label>
-            <input type="text">
-
-            <br>
-            <button type="submit" class="submit">Submit</button>
-            
+                    <input  type="radio"  id="female"> 
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <b>Select your intrests:</b>
+                    <input type="checkbox" id="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="'reading">
+                    <label for="reading" >Reading</label>
+                </div>
+                <div>
+                    <label>Bio(upto 200 characteristics):</label>
+                    <input type="text">
+                </div>
+                
+                    <button type="submit" class="submit">Submit</button>
+             
             </form>
         </section>
 
     </main>
-    <button class="fixedbutton"> Top</button>
-            
+    <a href="">
+        <button class="fixedbutton"> Top</button>
+    </a>
     <footer>
         <p>@ 2024 My Protfolia</p>
 
