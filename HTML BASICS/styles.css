@@ -12,8 +12,10 @@ header{
     border-radius: 8px;
     margin: 15px;
     margin-bottom: 5px;
-    align-content: center;
-    text-align: center;
+    display:flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
     height:100vh;
     background-color: rgb(84, 183, 183);
 }
@@ -44,8 +46,11 @@ main{
 }
 section{
     background-color: rgb(219, 241, 241);
-    align-content: center;
-    text-align: center;
+    display:flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    
     height:100vh;
     border: 1px solid black;
     border-radius: 8px;
