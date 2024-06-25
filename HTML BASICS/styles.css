@@ -43,7 +43,10 @@ header h1{
     color: black;
     margin:10px;
 }
-
+h2{
+    color:rgb(62, 138, 138);
+    font-size: 30px;
+}
 main{
     padding: 15px;
 }
@@ -59,13 +62,12 @@ section{
     border-radius: 8px;
     margin-bottom:15px;
 }
-
-h2{
-    color:rgb(62, 138, 138);
-    font-size: 30px;
-}
 a{
     text-decoration:none ;
+}
+img{
+    width:250px;
+    height:250px;
 }
 
 section div p{
@@ -80,23 +82,19 @@ section div p{
 ol li{
     font-size: 20px;
 }
-img{
-    width:250px;
-    height:250px;
-}
 form div{
     margin :5px 0;
    
 }
+
 .submit{
     border:1px solid black;
     border-radius: 5px;
     background-color: rgb(73, 140, 140);
     color:white;
     width:100px;
-    height:20px;
-    display:flex;
-    align-items: center;
+    height:35px;
+    align:center
     cursor:pointer;
 }
 .submit:hover{
