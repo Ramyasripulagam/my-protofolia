@@ -7,46 +7,84 @@
     <meta name="keyword" content="html tutorial for beginner">
     <title>Beginner protfolio</title>
     <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
         header{
-            position:fixed;
-            top:0;
-            width:100%;
             background:black;
             display:flex;
-            justify-content: center;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
 
         }
-        header h1{
+        .head{
+            padding:20px;
+            padding-left: -30px;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        header h2{
+            font-size: 40px;
             color: white;
-            text-decoration:underline;
-
+            
         }
-        header h1 span{
+        header h2 span{
             color:rgb(230, 95, 95);
         }
         nav{
-            
+            padding:20px 20px;
+            padding-left: 90px;
         }
         nav ul{
-            display: inline-block;
-            text-decoration: none;
-            color:aliceblue;
+           list-style-type: none;
+           text-align: center;
         }
+        nav ul li{
+                display:inline-block ;
+                padding: 10px 30px 10px 30px;
+                flex-wrap: wrap;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration: none;
+            font-weight:600;
+        }
+        .next{
+            padding: 30px 30px 10px 10px;
 
+        }
+        .butt{
+            padding:
+            text-decoration: none;
+            border:none;
+            color:white;
+            background-color: rgb(230, 95, 95);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ramya sri <span>Pulagam</span></h1>
+        <a href="" class="head"><h2>Protfo<span>lio</span></h2></a>
+        <nav>
+        
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT ME</a></li>
+                <li><a href="">SKILLS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class ="next">
+            <a href="" class="butt">Hire Me!</a>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT ME</a></li>
-            <li><a href="">SKILLS</a></li>
-            <li><a href="">CONTACT</a></li>
-        </ul>
-    </nav>
+
+    <section id="Home">
+        <div class="Home"></div>
+    </section>
 
 </body>
 </html>
