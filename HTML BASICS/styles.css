@@ -20,6 +20,13 @@ header{
     height:100vh;
     background-color: rgb(84, 183, 183);
 }
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .button{
     margin:10px;
     border-radius: 10px;
@@ -28,6 +35,7 @@ header{
     width: 130px;
     background-color:rgb(243, 246, 246);
     cursor: pointer;
+
     
 }
 .button:hover{
@@ -43,10 +51,7 @@ header h1{
     color: black;
     margin:10px;
 }
-h2{
-    color:rgb(62, 138, 138);
-    font-size: 30px;
-}
+
 main{
     padding: 15px;
 }
@@ -68,17 +73,17 @@ a{
 img{
     width:250px;
     height:250px;
+    border: 2px solid black;
+    border-radius: 50px 0px 50px 0px ;
 }
 
-section div p{
+section  p{
     text-align: center;
-   
     line-height: 25px;
-    padding-left:100px;
-    padding-right:100px;
-    font-style:italic;
-    font-size: 16px;  
+    font-size: 20px;
+    
 }
+
 ol li{
     font-size: 20px;
 }
@@ -86,7 +91,11 @@ form div{
     margin :5px 0;
    
 }
-
+section .sub-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .submit{
     border:1px solid black;
     border-radius: 5px;
@@ -117,9 +126,20 @@ input{
     cursor:pointer;
     color:white;
     background-color: rgb(91, 134, 134);
+
+}
+.fixedbutton:hover{
+    background-color:  rgb(229, 232, 232);
+    border: 1px solid black;
+    color: black;
 }
 footer{
     height:100px;
     background-color: black;
     color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
