@@ -12,7 +12,15 @@
             padding:0px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+        body{
+            background-color: black;
+        }
         header{
+            position :fixed;
+            width:100%;
+            top:0;
+            right:0;
+            z-index:1000;
             background:black;
             display:flex;
             justify-content: space-around;
@@ -21,13 +29,13 @@
 
         }
         .head{
-            padding:20px;
+            padding:30px;
             padding-left: -30px;
             text-decoration: none;
             letter-spacing: 1px;
         }
         header h2{
-            font-size: 40px;
+            font-size: 30px;
             color: white;
             
         }
@@ -43,25 +51,42 @@
            text-align: center;
         }
         nav ul li{
-                display:inline-block ;
-                padding: 10px 30px 10px 30px;
+                display:inline-flex ;
+                padding: 10px 40px 10px 30px;
                 flex-wrap: wrap;
         }
         nav ul li a{
             color:white;
             text-decoration: none;
-            font-weight:600;
+            font-size: 20px;
+            font-weight:500;
+            transition:all .6s ease ;
+        }
+        nav a:hover{
+            color:white;
+            transform: translateY(-6px);
         }
         .next{
             padding: 30px 30px 10px 10px;
 
         }
         .butt{
-            padding:
+            display:inline-block;
+            padding:10px ;
             text-decoration: none;
             border:none;
+            border-radius: 20px;
             color:white;
             background-color: rgb(230, 95, 95);
+        }
+        .butt:hover{
+            color:rgb(230, 95, 95);
+            background-color: transparent;
+            border:2px solid rgb(230, 95, 95);
+          
+        }
+        .Home{
+            color:aliceblue;
         }
     </style>
 </head>
@@ -71,19 +96,25 @@
         <nav>
         
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT ME</a></li>
-                <li><a href="">SKILLS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
         <div class ="next">
             <a href="" class="butt">Hire Me!</a>
+          
         </div>
     </header>
 
     <section id="Home">
-        <div class="Home"></div>
+        <div class="Home">
+            <h5>Hello, My name is </h5>
+            <h1>Ramya sri Pulagam</h1>
+            <h3>I am Front-End Developer</h3>
+            <div class="icons"></div>
+        </div>
     </section>
 
 </body>
