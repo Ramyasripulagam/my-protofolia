@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            border:3px solid red;
+        }
+        header{
+            border:2px solid red;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            height:80px;
+
+        }
+        header a{
+            text-decoration: underline;
+            color:white;
+            font-size: 30px;
+            font-weight: 400;
+        }
+        header a span{
+            color:rgb(230, 95, 95);
+        }
+        nav{
+            padding:20px;
+        }
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        nav ul li{
+            display:inline-block;
+            flex-wrap: wrap;
+            
+        } 
+        nav ul li a{
+            text-decoration: none;
+            margin:0px 20px;
+            color:black;
+            font-size: 20px;
+            font-weight: 500;
+            
+        }
+        nav ul li a:hover{
+            color:rgb(215, 68, 68);
+        }
+        nav a:hover{
+            transform:translateY(-10px);
+        }
+        .home{
+            border:2px solid red;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQipHjLiRopYNOj8aStvNvAl2eDN1msquiC0Q&s');
+            background-size:cover;
+            height:200%;
+            padding: 60px;
+            
+        }
+        .home .homename{
+            background-color: rgba(112, 109, 109, 0.5);
+            padding: 10% 10% ;
+            color: #fef9f9;
+            text-align: center;
+        }
+        .homename h1{
+            font-size: 200%;
+            font-weight: 400;
+        }
+        .about{
+            border:2px solid red;
+            background-color: black;
+            height: 500%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .about_div h1{
+            color:rgb(215, 68, 68);
+            text-align: center;
+            padding-top: 2%;
+        }
+        .about_div p{
+            background-color:rgba(210, 193, 193, 0.35); 
+            margin:30px;
+            border-radius: 20px;
+            color:white;
+            font-size: 100%;
+            line-height:115%;
+            text-align: center;
+            padding:2% 2% 2% 2%;
+         }
+        .skills{
+            border:2px solid rgb(255, 0, 0);   
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9zebeCG5vmrJ0nq1k7KBdEckFzGOwgRGQQ&s');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding:10px 20px 20px 20px;
+        }
+        .skills1 h1{
+            color: white;
+            padding: 10px 0px 40px;
+        }
+        
+        .skills img{
+            width:350px;
+            height:200px;
+        }
+        .contact{
+            border:2px solid red;
+            background-image: url('https://wallpapers.com/images/hd/glowing-contact-us-logo-qx58564q7a51etk6.jpg');
+            background-size: cover;
+            height:300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;            
+        }
+        .contact h1{
+            color:rgb(22, 21, 21);
+            padding:0px 0px 10px 35px;
+        }
+        .contact label{
+            color:rgb(244, 236, 236);
+        }
+        .contact_content{
+            background-color:  rgba(178, 172, 172, 0.5);
+            padding:20px 30px 20px 30px;
+            border: 2px solid rgb(246, 240, 240);
+            border-radius: 20px;
+
+        }
+        .contact .name{
+            line-height: 30px;
+        }
+        input{
+            background-color: black;
+            color:white;
+            
+        }
+        .contact .email{
+            line-height: 30px;
+        }
+        .sub{
+            text-align: center;
+            padding: 10px;
+        }
+        .sub button{
+            background-color: black;
+            color: white;
+            padding:5px 5px 5px 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: transparent;
+            border:2px solid black;
+            border-radius:5px ;
+            cursor: pointer;
+        }
+        .top{
+            position:fixed;
+            bottom: 10px;
+            right:10px;
+            height:50px;
+            width: 50px;
+            border:none;
+            border-radius: 50%;
+            cursor:pointer;
+            color:white;
+            background-color: rgb(240, 244, 244);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .top a{
+            text-decoration: none;
+            color:rgb(32, 28, 28);
+            padding-top: 10px 10px 0px 10px ;
+            
+        }
+        .top button{
+            background-color: white;
+            border: none;
+            font-size: 17px;
+            font-weight:200;
+
+        }
+        
+        footer{
+            background-color: black;
+            background-size: cover;
+            height:5%;
+            text-align:center;
+            padding:20px;
+        }
+        footer p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+                <a href="#home" class="name">Ramya <span>sri</span> Pulagam</a>
+    </header>
+   <nav>
+        <ul>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about">AboutMe</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+   </nav>
+
+   <section id="home" class="home">
+        <div class="homename">
+            <h1>Hey, I am Ramya sri and I am a beginner in Full Stack Development</h1>
+        </div>
+   </section>
+   <section id="about" class="about">
+    <div class="about_div">
+        <h1>ABOUT ME</h1>
+        <p >
+            I'm currently in my third year of B.Tech, specializing in Artificial Intelligence and Machine 
+            Learning at Shri Vishnu Engineering College For Women in Bhimavaram. My passion lies in harnessing
+             these cutting-edge technologies to tackle real-world challenges through AI-driven solutions.
+             Beyond my core studies, I'm enthusiastic about broadening my skill set to include full stack development. 
+             My aim is to fuse my expertise in AI and ML with comprehensive full stack skills to pioneer intelligent and
+              innovative solutions.Driven by a strong commitment to continuous learning and professional
+               growth, I'm eager to make meaningful contributions to the tech community while advancing 
+               my career.</p>
+    </div>
+   </section>
+   <section id="skills" class="skills">
+        <div class="skills1">
+            <h1>SKILLS</h1>
+        </div>
+        <div class="image">
+            <img src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png" alt="">
+        </div>
+        
+   </section>
+   <section id="contact" class="contact">
+        <div class="contact_content">
+            <h1>CONTACT ME</h1>
+            <form>
+                <div class="name">
+                <label for="name">Name :</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="sub">
+                    <button>submit</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <div class="top">
+        <a href="#home"><button>Home</button></a>
+    </div>
+    <footer>
+        <p>© @copyright Ramya sri 2024.<br>Design By Ramya sri Pulagam</p>
+    </footer>
+</body>
+</html>

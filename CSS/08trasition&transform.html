@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1{
+            width: 200px;
+            height: 100px;
+            background-color: brown;
+            transition: background-color 2s linear 1s;
+        }
+        .b1:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+        .b2{
+            width: 200px;
+            height: 100px;
+            background-color: rgb(136, 42, 165);
+            transition: background-color 2s ease-in 1s;
+        }
+        .b2:hover{
+            background-color: rgb(0, 255, 17);
+            color: aliceblue;
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <button class="b1">linear</button>
+    <button class="b2">ease </button>
+</body>
+</html>

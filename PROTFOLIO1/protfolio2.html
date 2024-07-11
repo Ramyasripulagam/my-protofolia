@@ -5,116 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this is my personal website">
     <meta name="keyword" content="html tutorial for beginner">
-    <title>Beginner protfolio</title>
-    <style>
-        *{
-            margin:0px;
-            padding:0px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        body{
-            background-color: black;
-        }
-        header{
-            position :fixed;
-            width:100%;
-            top:0;
-            right:0;
-            z-index:1000;
-            background:black;
-            display:flex;
-            justify-content: space-around;
-            text-align: center;
-            flex-wrap: wrap;
-
-        }
-        .head{
-            padding:30px;
-            padding-left: -30px;
-            text-decoration: none;
-            letter-spacing: 1px;
-        }
-        header h2{
-            font-size: 30px;
-            color: white;
-            
-        }
-        header h2 span{
-            color:rgb(230, 95, 95);
-        }
-        nav{
-            padding:20px 20px;
-            padding-left: 90px;
-        }
-        nav ul{
-           list-style-type: none;
-           text-align: center;
-        }
-        nav ul li{
-                display:inline-flex ;
-                padding: 20px 40px 10px 40px;
-                flex-wrap: wrap;
-        }
-        nav ul li a{
-            color:white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight:500;
-            transition:all .6s ease ;
-        }
-        nav a:hover{
-            color:white;
-            transform: translateY(-6px);
-        }
-        .next{
-            padding: 40px 30px 10px 10px;
-
-        }
-        .butt{
-            display:inline-block;
-            padding:10px ;
-            text-decoration: none;
-            border:none;
-            border-radius: 20px;
-            color:white;
-            background-color: rgb(230, 95, 95);
-        }
-        .butt:hover{
-            color:rgb(230, 95, 95);
-            background-color: transparent;
-            border:2px solid rgb(230, 95, 95);
-          
-        }
-        .home{
-            color:aliceblue;
-        }
-    </style>
+    <title>protfolio3</title>
+    <link rel="stylesheet" href="protfolio3style.css">
+    
 </head>
 <body>
     <header>
-        <a href="" class="head"><h2>Protfo<span>lio</span></h2></a>
+        <div class="logo">
+        <a href="" ><h2>Protfo<span>lio</span></h2></a>
+        </div>
         <nav>
-        
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="">About me</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-        </nav>
+        </nav> 
         <div class ="next">
             <a href="" class="butt">Hire Me!</a>
-          
+
         </div>
     </header>
-
-    <section id="Home">
-        <div class="home">
-            <h5>Hello, My name is </h5>
-            <h1>Ramya sri Pulagam</h1>
-            <h3>I am Front-End Developer</h3>
-            <div class="icons"></div>
+    <section id="home" class="home">
+        <div class="names">
+            <h5>Hello, <span>My name is </span></h5>
+            <h1><span>Ramya sri</span> Pulagam</h1>
+            <h3>I am Front-End Developer.</h3>
         </div>
+        <div class="img">
+            <img src="IMAGE1.jpg" alt="">
+        </div>
+    </section>
+    <section id="aboutme" class="aboutme">
+        
     </section>
 
 </body>
