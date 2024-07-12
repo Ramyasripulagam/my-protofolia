@@ -165,14 +165,12 @@ nav.sticky .menu-btn{
   color: #f9fafc;
 }
 
-.home .media-icons a{
+.home .home-content .media-icons a{
   color:#f06666;
   font-size: 18px;
   margin: 0 6px;
 }
-.home.sticky .media-icons a{
-  color: #FFF;
-}
+
 .home .ab{
   margin: 0px;
 }
@@ -387,6 +385,11 @@ section .button button:hover{
 .contact .content .title{
   text-align: center;
 
+}
+.contact .content .contact_left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .contact .content .box{ 
   padding:10px 20px 10px 20px;
