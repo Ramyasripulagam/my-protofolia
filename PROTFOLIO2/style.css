@@ -164,11 +164,7 @@ nav.sticky .menu-btn{
   margin: 5px 0;
   color: #f9fafc;
 }
-.home .text-four{
-  font-size: 23px;
-  margin: 5px 0;
-  color: #0E2431;
-}
+
 .home .media-icons a{
   color:#f06666;
   font-size: 18px;
@@ -203,7 +199,7 @@ nav.sticky .menu-btn{
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section{
   padding-top: 40px;
-  background-color: black;
+  background-color: rgb(231, 225, 225);
 }
 section .content{
   width: 80%;
@@ -255,6 +251,7 @@ section .title span::after{
 .about-details .right{
   width: 55%;
 }
+
 
 section  .topic{
   color: #feffff;
