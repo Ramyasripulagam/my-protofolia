@@ -165,12 +165,19 @@ nav.sticky .menu-btn{
   color: #f9fafc;
 }
 
-.home .home-content .media-icons a{
+.home .media-icons a{
   color:#f06666;
   font-size: 18px;
   margin: 0 6px;
+  
 }
-
+.home .media-icons a i{
+  transition:all 0.5s ease-in-out;
+}
+.home .media-icons a i:hover{
+  transform: translateY(-5px);
+  color: #F0F8FF;
+}
 .home .ab{
   margin: 0px;
 }
