@@ -197,7 +197,7 @@ nav.sticky .menu-btn{
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section{
   padding-top: 40px;
-  background-color: rgb(7, 7, 7);
+  background-color: rgb(14, 13, 13);
 }
 section .content{
   width: 80%;
@@ -393,7 +393,7 @@ section .button button:hover{
 }
 .contact .content .box{ 
   padding:10px 20px 10px 20px;
-  margin: 10px 150px;
+  margin: 10px 300px;
   border-radius: 20px;
   border:1px solid #f06666;
   display: flex;
@@ -499,8 +499,9 @@ footer .text span a:hover{
   }
   .contact .content .box{ 
     padding:10px 20px 10px 20px;
-    margin: 10px 200px;
+    margin: 10px 300px;
   
+  }
 }
 @media (max-width: 900px) {
   .about .left img{
@@ -509,7 +510,7 @@ footer .text span a:hover{
   }
   .contact .content .box{ 
     padding:20px 10px 20px 10px;
-    margin: 5px 200px;
+    margin: 5px 150px;
   }
   
   
@@ -576,8 +577,7 @@ footer .text span a:hover{
     margin: 20px 0;
     width: 100%;
   }
-  
-
+ 
 }
 
 @media (max-width: 500px){
@@ -594,5 +594,4 @@ footer .text span a:hover{
   .contact{
     padding: 10px 0 0 0;
   }
-
 }
