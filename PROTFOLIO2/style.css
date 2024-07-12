@@ -195,9 +195,9 @@ nav.sticky .menu-btn{
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
-section{
+.about{
   padding-top: 40px;
-  background-color: rgb(14, 13, 13);
+  background-color: #070707;
 }
 section .content{
   width: 80%;
