@@ -400,7 +400,7 @@ section .button button:hover{
 }
 .contact .content .box{ 
   padding:10px 20px 10px 20px;
-  margin: 10px 220px;
+  margin: 10px 200px;
   border-radius: 20px;
   border:1px solid #f06666;
   display: flex;
@@ -613,7 +613,7 @@ footer .text span a:hover{
   }
   .contact .content .box{ 
     padding:20px 10px 20px 10px;
-    margin: 6px 90px;
+    margin: 6px 40px;
   }
   
 
