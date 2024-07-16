@@ -252,6 +252,8 @@ section .title span::after{
   width: 400px;
   object-fit: cover;
   border-radius: 50%;
+  filter:drop-shadow(5px 5px 5px #f1efef);
+  
 }
 .about-details .right{
   width: 55%;
