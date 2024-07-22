@@ -175,7 +175,8 @@ nav.sticky .menu-btn{
   transition:all 0.5s ease-in-out;
 }
 .home .media-icons a i:hover{
-  transform: translateY(-5px);
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   color: #F0F8FF;
 }
 .home .ab{
