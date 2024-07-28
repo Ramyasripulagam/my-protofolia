@@ -175,7 +175,7 @@ nav.sticky .menu-btn{
   transition:all 0.5s ease-in-out;
 }
 .home .media-icons a i:hover{
-  transform: translateY(-5px);
+  transform: rotate(360deg);
   color: #F0F8FF;
 }
 .home .ab{
@@ -187,15 +187,15 @@ nav.sticky .menu-btn{
   border-radius: 40px;
   font-size: 20px;
   font-weight: 400;
-  background:  #f9fafc;
-  color: #f06666;
+  background:linear-gradient(to left ,rgb(172, 55, 55),rgb(27, 22, 22));
+  color: #fdfcfc;
   cursor: pointer;
   border: 2px solid  #f9fafc;
   transition: all 0.4s ease;
 }
 .home .ab button:hover{
   border-color:  #f06666;
-  background-color: transparent;
+  background:linear-gradient(to right ,rgb(172, 55, 55),rgb(172, 55, 55),rgb(27, 22, 22));
   color:  #f9fafc;
 }
 
@@ -204,7 +204,7 @@ nav.sticky .menu-btn{
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 .about{
   padding-top: 40px;
-  background-color: #070707;
+  background:linear-gradient(rgb(172, 55, 55),rgb(27, 22, 22),black);
 }
 section .content{
   width: 80%;
@@ -252,13 +252,11 @@ section .title span::after{
   width: 400px;
   object-fit: cover;
   border-radius: 50%;
-  filter:drop-shadow(5px 5px 5px #f1efef);
   
 }
 .about-details .right{
   width: 55%;
 }
-
 
 section  .topic{
   color: #feffff;
@@ -293,7 +291,7 @@ section .button button:hover{
 /* Skills CSS */
 
  .skills{
-   background: #070707;
+   background:linear-gradient(rgb(172, 55, 55),rgb(27, 22, 22),black);
  }
  .skills .content{
    padding: 40px 0;
@@ -317,14 +315,16 @@ section .button button:hover{
 }
 
 .skills-details .boxes{
-  width: 45%;
+  width: 55%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .skills-details .box{
   width: calc(100% / 2 - 20px);
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .skills-details .boxes .topic{
   font-size: 20px;
@@ -383,7 +383,7 @@ section .button button:hover{
   */
 /* Contact Me CSS */
 .contact{
-  background: #050505;
+  background:linear-gradient(rgb(172, 55, 55),rgb(27, 22, 22),black);
   height: 500px;
   padding:6px 140px 40px 140px;
   
