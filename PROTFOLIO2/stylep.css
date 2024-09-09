@@ -144,7 +144,7 @@ nav.sticky .button button:hover{
 nav .menu-btn,
 .navbar .menu .cancel-btn{
   position: absolute;
-  color: #fff;
+  color: #fff; 
   right: 20px;
   top: 30px;
   font-size: 20px;
