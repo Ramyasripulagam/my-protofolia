@@ -379,48 +379,63 @@ section .button button:hover{
   color: #f06666;;
 }
 /* Skills CSS */
-
- .skills .content{
-   padding: 40px 0;
- }
- .skills .skills-details{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
- .skills-details .text{
-   width: 50%;
- }
- .skills-details p{
-   color: #e2e2e2;
-   text-align: justify;
- }
-.skills .skills-details .experience{
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
+.skills .content {
+  padding: 40px 0;
+  background: #1a1a1a; /* Dark background for contrast */
+  color: #fff; /* Light text color */
 }
 
-.skills-details .boxes{
-  width: 55%;
+.skills .skills-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.skills-details .text {
+  width: 50%;
+  padding-right: 20px; /* Space between text and skills boxes */
+}
+
+.skills-details p {
+  color: #d4d4d4;
+  text-align: justify;
+}
+
+.skills-details .boxes {
+  width: 50%; /* Adjusted to fit better */
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around; /* Distribute space evenly */
 }
-.skills-details .box{
-  width: calc(100% / 2 - 20px);
+
+.skills-details .box {
+  width: 45%; /* Adjust width to fit in container */
   margin: 10px 0;
+  padding: 20px; /* Add padding inside boxes */
+  background: #2a2a2a; /* Slightly lighter background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
 }
-.skills-details .boxes .topic{
-  font-size: 20px;
-  color: #f06666;;
+
+.skills-details .box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
 }
-.skills-details .boxes .per{
-  font-size: 60px;
-  color: #f06666;;
+
+.skills-details .topic {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f06666;
 }
+
+.skills-details .per {
+  font-size: 50px;
+  color: #f06666;
+  margin-top: 10px; /* Space between topic and percentage */
+}
+
 /* Projects Section */
 .projects {
   background: url('your-background-image.jpg') no-repeat center center/cover; /* Background image */
