@@ -13,7 +13,7 @@
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f5f3f3;
 }
 ::-webkit-scrollbar-thumb {
     background:#f06666;
@@ -22,7 +22,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background:#f06666;
+    background:#f1ac0b;
 }
 /* navbar styling */
 nav{
@@ -48,8 +48,39 @@ nav .navbar{
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
-  color:#f06666;;
   transition: all 0.5s ease-in;
+}
+.navbar .menu a{
+  opacity: 0;
+  animation: menu .5s ease forwards;
+  animation-delay: calc(.2s *var(--i));
+}
+@keyframes menu{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.navbar a h3{
+  color:rgb(243, 28, 28);
+  font-weight:100;
+  background-clip: text;
+  text-shadow: 3px 3px 4px #fefdfd;
+  animation: logo 1s;
+}
+@keyframes logo{
+  0%{
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 nav .navbar .logo a:hover{
   color: #fff;
@@ -130,16 +161,32 @@ nav.sticky .menu-btn{
 .navbar .menu .menu-btn{
   color: #fff;
 }
-
+/* body */
+body{
+  background-color: #050505;
+}
 /* home section styling */
 .home{
   height: 100vh;
   width: 100%;
-  background: url("https://images.unsplash.com/photo-1610465299993-e6675c9f9efa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat;
-  background-size: cover;
-  background-position:center;
-  background-attachment: fixed;
-  font-family: 'Ubuntu', sans-serif;
+}
+.backimg{
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  z-index: -1;
+
+}
+.backimg img{
+  width:100vw;
+  height:100vh;
+  animation: backimage 4s;
+  
+}
+@keyframes backimage{
+  from{opacity: 0;}
+  to{opacity: 100;}
 }
 .home .home-content{
   width: 90%;
@@ -149,27 +196,70 @@ nav.sticky .menu-btn{
   flex-direction: column;
   justify-content: center;
   line-height: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  animation: homecontent 4s;
+
 }
 .home .text-one{
   font-size: 25px;
   color: #0E2431;
+  animation: text1 1s;
+}
+@keyframes text1{
+  0%{transform: translateX(-600px);}
+  100%{transform: translateX(0px);}
 }
 .home .text-two{
   font-size: 70px;
   font-weight: 600;
   margin-left: -3px;
+  animation: text2 2s;
+}
+@keyframes text2{
+  20%{transform: translateX(-600px);}
+  100%{transform: translateX(0px);}
 }
 .home .text-three{
   font-size: 35px;
   margin: 5px 0;
   color: #f9fafc;
-}
+  animation: text3 2.5s;
 
+}
+@keyframes text3{
+  30%{transform: translateX(-600px);}
+  100%{transform: translateX(0px);}
+}
 .home .media-icons a{
   color:#f06666;
   font-size: 18px;
   margin: 0 6px;
   
+}
+.home .media-icons{
+  display: flex;
+  flex-direction: row;
+}
+.media-icons .icon1{
+  animation: icon1 3s ;
+}
+@keyframes icon1{
+  0%{transform: translateX(-100px);}
+  100%{transform: translateX(0px);}
+}
+.media-icons .icon2{
+  animation: icon2 2s;
+}
+@keyframes icon2{
+  0%{transform: translateX(-100px);}
+  100%{transform: translateX(0px);}
+}
+.media-icons .icon3{
+  animation: icon3 1s;
+}
+@keyframes icon3{
+  0%{transform: translateX(-100px);}
+  100%{transform: translateX(0px);}
 }
 .home .media-icons a i{
   transition:all 0.5s ease-in-out;
@@ -188,16 +278,22 @@ nav.sticky .menu-btn{
   border-radius: 40px;
   font-size: 20px;
   font-weight: 400;
-  background:  #f9fafc;
-  color: #f06666;
+  border-color: #f06666;
+  color:#f06666;
+  background-color: transparent;
   cursor: pointer;
   border: 2px solid  #f9fafc;
+  border-color: #f9fafc;
   transition: all 0.4s ease;
+  animation: text3 3s;
 }
 .home .ab button:hover{
-  border-color:  #f06666;
-  background-color: transparent;
-  color:  #f9fafc;
+  background:  #f9fafc;
+  color: #f06666;
+}
+@keyframes text3{
+  30%{transform: translateX(-600px);}
+  100%{transform: translateX(0px);}
 }
 
 /* About Section Styling */
@@ -253,7 +349,6 @@ section .title span::after{
   width: 400px;
   object-fit: cover;
   border-radius: 50%;
-  filter:drop-shadow(5px 5px 5px #f1efef);
   
 }
 .about-details .right{
