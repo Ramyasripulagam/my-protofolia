@@ -266,7 +266,6 @@ body{
 }
 .home .media-icons a i:hover{
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
   color: #F0F8FF;
 }
 .home .ab{
@@ -278,22 +277,17 @@ body{
   border-radius: 40px;
   font-size: 20px;
   font-weight: 400;
-  border-color: #f06666;
-  color:#f06666;
-  background-color: transparent;
+  background:  #f9fafc;
+  color: #f06666;
   cursor: pointer;
   border: 2px solid  #f9fafc;
-  border-color: #f9fafc;
   transition: all 0.4s ease;
   animation: text3 3s;
 }
 .home .ab button:hover{
-  background:  #f9fafc;
-  color: #f06666;
-}
-@keyframes text3{
-  30%{transform: translateX(-600px);}
-  100%{transform: translateX(0px);}
+  border-color:  #f06666;
+  background-color: transparent;
+  color:  #f9fafc;
 }
 
 /* About Section Styling */
@@ -301,7 +295,7 @@ body{
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 .about{
   padding-top: 40px;
-  background-color: #070707;
+  background:linear-gradient(rgb(172, 55, 55),rgb(27, 22, 22),black);
 }
 section .content{
   width: 80%;
@@ -388,7 +382,7 @@ section .button button:hover{
 /* Skills CSS */
 
  .skills{
-   background: #070707;
+   background:linear-gradient(rgb(172, 55, 55),rgb(27, 22, 22),black);
  }
  .skills .content{
    padding: 40px 0;
@@ -412,14 +406,16 @@ section .button button:hover{
 }
 
 .skills-details .boxes{
-  width: 45%;
+  width: 55%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .skills-details .box{
   width: calc(100% / 2 - 20px);
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .skills-details .boxes .topic{
   font-size: 20px;
@@ -478,7 +474,7 @@ section .button button:hover{
   */
 /* Contact Me CSS */
 .contact{
-  background: #050505;
+  background:linear-gradient(rgb(172, 55, 55),rgb(27, 22, 22),black);
   height: 500px;
   padding:6px 140px 40px 140px;
   
