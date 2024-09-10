@@ -557,11 +557,11 @@ section .button button:hover{
 .services .boxes{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .services .boxes .box{
   margin: 10px 0;
-  width: calc(100% / 3 - 20px);
+  width:150px;
   text-align: center;
   border-radius: 12px;
   padding: 30px 10px;
