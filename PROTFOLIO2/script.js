@@ -75,3 +75,4 @@ ScrollReveal({
 ScrollReveal().reveal('.about, .projects', { origin:'left'});
 ScrollReveal().reveal('.skills, .services', { origin:'right'});
 ScrollReveal().reveal('.contact', { origin:'top'});
+ 
