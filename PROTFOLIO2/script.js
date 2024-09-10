@@ -60,5 +60,18 @@ for (let i = 0; i < navLinks.length; i++) {
       .then(response => form.reset())
       .catch(error => console.error('Error!', error.message))
       alert("Successfully submited...")
-      
+      form.reset()
+       
   })
+
+  // scroll reveal
+
+ScrollReveal({
+  distance:'100px',
+  duration:2000,
+  delay:200,
+});
+
+ScrollReveal().reveal('.about, .projects', { origin:'left'});
+ScrollReveal().reveal('.skills, .services', { origin:'right'});
+ScrollReveal().reveal('.contact', { origin:'top'});
