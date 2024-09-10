@@ -49,6 +49,16 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 
 // Function for form submission alert
-function fun() {
-  alert("Submitted successfully");
-}
+
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzRTwLcBhyV5RbD5-9PgDGd2jwynHS2gDENYlE_AjA-8o6NnTtDPgDQgAcm3vYPxUrj/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => form.reset())
+      .catch(error => console.error('Error!', error.message))
+      alert("Successfully submited...")
+      
+  })

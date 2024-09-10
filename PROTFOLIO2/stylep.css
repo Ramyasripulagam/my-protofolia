@@ -163,7 +163,7 @@ nav.sticky .menu-btn{
 }
 /* body */
 body{
-  background-color: #050505;
+  background-color: #0c0c0c;
 }
 /* home section styling */
 .home{
@@ -378,21 +378,22 @@ section .button button:hover{
   background-color: #fff;
   color: #f06666;;
 }
+
 /* Skills CSS */
 .skills .content {
   padding: 40px 0;
-  background: #1a1a1a; /* Dark background for contrast */
-  color: #fff; /* Light text color */
+  color: #fff; 
+
 }
 
 .skills .skills-details {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-details .text {
-  width: 50%;
   padding-right: 20px; /* Space between text and skills boxes */
 }
 
@@ -402,24 +403,25 @@ section .button button:hover{
 }
 
 .skills-details .boxes {
-  width: 50%; /* Adjusted to fit better */
+  width: 100vw; /* Adjusted to fit better */
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-around; /* Distribute space evenly */
+  align-items:center;
+  justify-content:space-evenly; /* Distribute space evenly */
 }
-
 .skills-details .box {
-  width: 45%; /* Adjust width to fit in container */
-  margin: 10px 0;
+  margin: 10px;
   padding: 20px; /* Add padding inside boxes */
   background: #2a2a2a; /* Slightly lighter background for contrast */
   border-radius: 8px; /* Rounded corners */
+  color: #f06666;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
 }
 
 .skills-details .box:hover {
+  color: white;
   transform: translateY(-5px); /* Lift effect on hover */
   box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
 }
@@ -427,12 +429,10 @@ section .button button:hover{
 .skills-details .topic {
   font-size: 22px;
   font-weight: bold;
-  color: #f06666;
 }
 
 .skills-details .per {
   font-size: 50px;
-  color: #f06666;
   margin-top: 10px; /* Space between topic and percentage */
 }
 
@@ -602,7 +602,7 @@ section .button button:hover{
 /* Contact Me CSS */
 .contact{
   background:linear-gradient(rgb(172, 55, 55),rgb(27, 22, 22),black);
-  height: 500px;
+  height: 100vh;
   padding:6px 140px 40px 140px;
   
 }
@@ -614,15 +614,23 @@ section .button button:hover{
   text-align: center;
 
 }
+
+.contact .content .mainbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
 .contact .content .mainbox .contact_left{
   padding-bottom:10px ;
   color: #F0F8FF;
 }
 .contact .content .box{ 
+  width:400px;
   padding:10px 20px 10px 20px;
   margin: 10px 200px;
   border-radius: 20px;
-  border:1px solid #f06666;
+  border:5px solid #f06666;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -644,18 +652,34 @@ section .button button:hover{
   color:rgb(246, 240, 240);
 }
 .contact .content  form input{
+  text-decoration: none;
+  
+  height:25px;
   color:rgb(246, 240, 240);
-  background-color: transparent;
+  background-color: white;
+}
+.contact .content form .message{
+  padding-top: 10px;
+}
+.contact .content form button textarea{
+  width: 70px;
+  height: 60px;
 }
 .contact .content  form .Submit{
   line-height: 50px;
 }
 .contact .content form button{
   background-color: #f06666;
-  padding:4px 6px 4px 6px;
+  width:90px;
+  padding:6px 6px 6px 6px;
   color:#F0F8FF;
   border:1px solid white;
-  border-radius: 6px;
+  border-radius: 15px;
+}
+.contact .content form button input{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
 .contact .content form button:hover{
   background-color: transparent;
@@ -664,25 +688,25 @@ section .button button:hover{
   cursor: pointer;
 
 }
-/* Footer CSS 
-footer{
-  background: #66f068;;
+/* Footer CSS */
+.footer{
+  align-items: center;
+  flex-wrap: wrap;
+  padding:2 rem 9%;
+  background: #f9faf9;;
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
-footer .text span{
+.footer-text p{
   font-size: 17px;
   font-weight: 400;
-  color: #ffffff;
+  color: #0e0d0d;
 }
-footer .text span a{
+footer .footer-text {
   font-weight: 500;
   color: #ffffff;
 }
-footer .text span a:hover{
-  text-decoration: underline;
-}*/
 /* Scroll TO Top Button CSS */
 .scroll-button a{
   position: fixed;
@@ -698,7 +722,7 @@ footer .text span a:hover{
 }
 
 /* Responsive Media Query */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .contact .content .box{ 
     padding:10px 20px 10px 20px;
     margin: 10px 200px;
@@ -711,8 +735,9 @@ footer .text span a:hover{
     width: 85%;
   }
   .contact .content .box{ 
+    width:300px;
     padding:10px 20px 10px 20px;
-    margin: 10px 200px;
+    margin: 0px 200px;
   
   }
   
@@ -748,7 +773,7 @@ footer .text span a:hover{
 @media (max-width:950px){
   .contact .content .box {
     padding: 10px 20px 10px 20px;
-    margin: 10px 190px;
+    margin: 0px 190px;
   }
 }
 
@@ -760,7 +785,7 @@ footer .text span a:hover{
   }
   .contact .content .box{ 
     padding:20px 10px 20px 10px;
-    margin: 10px 190px;
+    margin: 0px 0px;
   }
   
   
@@ -829,7 +854,7 @@ footer .text span a:hover{
   }
   .contact{
    
-    height: 600px;
+    height:100vh;
   }
   .contact .content .box{ 
     padding:20px 10px 20px 10px;
@@ -841,7 +866,7 @@ footer .text span a:hover{
  
 }
 
-@media (max-width: 500px){
+@media (min-width:480px) and (max-width: 600px){
   .home .text-two{
     font-size: 55px;
   }
@@ -854,11 +879,14 @@ footer .text span a:hover{
   }
   .contact{
     padding: 10px 0 0 0;
-    height: 600px;
+    height: 100vh;
   }
   .contact .content .box{ 
-    padding:20px 10px 20px 10px;
-    margin: 0px;
+    padding:20px 10px 20px 0px;
+    margin-bottom: 10px;
+  }
+  .contact button input{
+    margin: 0;
   }
   
 }

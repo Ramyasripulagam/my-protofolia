@@ -22,7 +22,8 @@
           <li><a href="#home" style="--i:1">Home</a></li>
           <li><a href="#about" style="--i:2">About</a></li>
           <li><a href="#skills" style="--i:3">Skills</a></li>
-          <!-- <li><a href="#" style="--i:4">Projects</a></li> -->
+          <li><a href="#projects" style="--i:4">Projects</a></li>
+          <li><a href="#services" style="--i:4">Services</a></li>
           <li><a href="#contact" style="--i:5">Contact</a></li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
@@ -117,6 +118,14 @@
             <div class="box">
               <div class="topic">React Js</div>
               <div class="per">70%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Python</div>
+              <div class="per">70%</div>
+            </div>
+            <div class="box">
+              <div class="topic">Java</div>
+              <div class="per">60%</div>
             </div>
           </div>
         </div>
@@ -231,7 +240,7 @@
           </div>
           <div class="box">
             <div class="heading">Any queries?</div>
-              <form action="">
+              <form method="POST" name="submit-to-google-sheet">
                 <div class="username">
                   <label for="Name">Name:</label>
                   <input type="text" id="Name" name="Name" placeholder="Enter your name" required>
@@ -241,19 +250,29 @@
                   <input type="email" id="email" name="Email" placeholder="Enter your email" required>
                 </div>
                 <div class="message"> 
-                  <label for="message">Message:</label>
-                  <textarea id="message" name="message" cols="20" required></textarea>
+                  <label for="message">Message:</label><br>
+                  <textarea id="message" name="Message" cols="25" rows="5" required></textarea>
 
                 </div>
 
                 <div class="Submit">
-                  <button onclick="fun()"> Submit</button>
+                  <button><input type="submit" value="Submit" name="Submit"></button>
                 </div>
               </form>
           </div>  
         </div>      
       </div>
     </section>
+      <!-- Footer section -->
+       <section class="footer">
+       <footer >
+        <div class="footer-text">
+            <p>Copyright &copy;2024 by @Ramyasripulagam | All Rights Reserved</p>
+        </div>
+
+       </footer>
+      </section>
+
 
     <script src="script.js"></script>
   </body>
