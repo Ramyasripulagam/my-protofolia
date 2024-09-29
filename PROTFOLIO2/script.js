@@ -47,32 +47,6 @@ for (let i = 0; i < navLinks.length; i++) {
     body.style.overflow = "auto"; // Ensure scrolling is enabled
   });
 }
-
-// Function for form submission alert
-
-
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzRTwLcBhyV5RbD5-9PgDGd2jwynHS2gDENYlE_AjA-8o6NnTtDPgDQgAcm3vYPxUrj/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => form.reset())
-      .catch(error => console.error('Error!', error.message))
-      alert("Successfully submited...")
-      form.reset()
-       
-  })
-
-  // scroll reveal
-
-ScrollReveal({
-  distance:'50px',
-  duration:2000,
-  delay:200,
-});
-
-ScrollReveal().reveal('.about, .projects', { origin:'left'});
-ScrollReveal().reveal('.skills, .services', { origin:'right'});
-ScrollReveal().reveal('.contact', { origin:'top'});
- 
+function fun(){
+  alert("Submitted successfully")
+}
