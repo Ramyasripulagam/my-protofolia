@@ -67,9 +67,9 @@ for (let i = 0; i < navLinks.length; i++) {
   // scroll reveal
 
 ScrollReveal({
-  distance:'50px',
-  duration:2000,
-  delay:200,
+  distance:'100px',
+  duration:3000,
+  delay:250,
 });
 
 ScrollReveal().reveal('.about, .projects', { origin:'left'});
